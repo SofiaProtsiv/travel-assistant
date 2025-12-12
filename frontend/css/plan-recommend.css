@@ -1,0 +1,139 @@
+.activity-duration {
+    font-size: 0.8rem;
+    color: var(--color-muted-foreground);
+    margin-top: 0.25rem;
+}
+
+.activity-content-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.activity-icon {
+    font-size: 1.5rem;
+}
+
+.activity-rating {
+    background: #ffd700;
+    color: #333;
+    padding: 0.25rem 0.5rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.activity-tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.tag {
+    background: var(--color-accent);
+    color: var(--color-muted-foreground);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+}
+
+.category-museum {
+    border-left: 4px solid #3498db;
+}
+
+.category-landmark {
+    border-left: 4px solid #e74c3c;
+}
+
+.category-park {
+    border-left: 4px solid #2ecc71;
+}
+
+.category-food {
+    border-left: 4px solid #f39c12;
+}
+
+.category-free {
+    border-left: 4px solid #9b59b6;
+}
+
+.category-other {
+    border-left: 4px solid #95a5a6;
+}
+
+.form-select,
+.form-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-select:focus,
+.form-input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(124, 93, 249, 0.1);
+}
+
+.btn-generate {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.btn-save-plan {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    color: white;
+    border: none;
+}
+
+.btn-save-plan:hover {
+    background: linear-gradient(135deg, #27ae60, #219653);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .activity-item {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .activity-time {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1rem;
+        min-width: auto;
+    }
+    
+    .budget-breakdown {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .day-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .budget-breakdown {
+        grid-template-columns: 1fr;
+    }
+    
+    .activity-content-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
